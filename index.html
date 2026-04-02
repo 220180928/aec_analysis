@@ -103,7 +103,7 @@
                 </div>
 				
                 <div class="audio-item">
-                    <h3>原始输入音频 (input0)</h3>
+                    <h3>采集音频 (input0)</h3>
                     <audio controls>
                         <source src="audio/input0.wav" type="audio/wav">
                         您的浏览器不支持 audio 元素。
@@ -112,21 +112,39 @@
                 </div>
 
                 <div class="audio-item">
-                    <h3>自适应滤波器输出</h3>
+                    <h3>webrtc-自适应滤波器输出</h3>
                     <audio controls>
                         <source src="audio/output-1_filter_fixdelay44ms.wav" type="audio/wav">
                         您的浏览器不支持 audio 元素。
                     </audio>
-                    <p class="info">经过 AEC-自适应滤波器处理，固定延迟补偿 44ms</p>
+                    <p class="info">经过 webrtc-自适应滤波器处理，固定延迟补偿 44ms</p>
+                </div>
+				
+				<div class="audio-item">
+                    <h3>kalman-自适应滤波器输出</h3>
+                    <audio controls>
+                        <source src="audio/kalman-filter.wav" type="audio/wav">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                    <p class="info">经过频域高分辨率kalman滤波器处理 </p>
                 </div>
 
                 <div class="audio-item">
-                    <h3>非线性抑制输出</h3>
+                    <h3>webrtc-非线性处理输出</h3>
                     <audio controls>
                         <source src="audio/output-1_fix-delay-44ms.wav" type="audio/wav">
                         您的浏览器不支持 audio 元素。
                     </audio>
-                    <p class="info">经过 AEC-NLP处理</p>
+                    <p class="info">经过 webrtc-NLP处理</p>
+                </div>
+				
+				<div class="audio-item">
+                    <h3>kalman-非线性处理输出</h3>
+                    <audio controls>
+                        <source src="audio/kalman-nlp.wav" type="audio/wav">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                    <p class="info">频域高分辨率kalman滤波器输出经过近端友好NLP处理</p>
                 </div>
             </div>
         </div>
